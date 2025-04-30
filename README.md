@@ -1,9 +1,16 @@
 # MEDIANN FFmpeg
 ## 简介
-项目实现了基于神经网络的AI图像/视频处理，包括但不限于去噪、修复、增强、超分等任务。
+项目实现了基于神经网络的AI图像/视频处理，包括但不限于去噪、修复、增强、超分等任务，项目的推理引擎使用onnxruntime+cuda+cudnn+tensorrt，媒体处理框架使用ffmpeg4.2.1，滤镜调用推理引擎进行图像/视频的处理。
 - 各种类型的神经网络图像处理，包括单帧、多帧等AI处理。
 - 支持cpu、cuda、tensorrt推理模式。
 - 支持window下、linux（centos 7/ ubuntu 18.04）下推理。
+
+## 版本下载
+
+| 版本 | window | linux | models |
+|:-------:|:-------:|:-------:|:-------:|
+| v1.0.0 | [ffmpeg-win10](https://github.com/jlygit/MediaNN/releases/download/v1.0.0/ffmpeg-win10.zip)  | [ffmpeg-linux](https://github.com/jlygit/MediaNN/releases/download/v1.0.0/ffmpeg-linux.zip) | [models](https://github.com/jlygit/MediaNN/releases/download/v1.0.0/models.zip) |
+| v1.0.1 | - | - | - |
 
 ## mediaNN 滤镜
 支持单帧的任意倍数的视频/图片处理。
@@ -200,3 +207,5 @@
 ### todo
 - [GFPGAN](https://github.com/TencentARC/GFPGAN)
 
+# 感谢
+感谢[onnxruntime](https://github.com/microsoft/onnxruntime)、[tensorrt](https://github.com/NVIDIA/TensorRT)、[ffmpeg](https://github.com/FFmpeg/FFmpeg)以及项目中用到的所有开源的神经网络算法模型（ [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN)、[SwinIR](https://github.com/JingyunLiang/SwinIR)...等等）的团队和作者的贡献。
